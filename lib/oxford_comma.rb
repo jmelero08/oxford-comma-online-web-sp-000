@@ -4,11 +4,11 @@ def oxford_comma(array)
   elsif array.length > 1 
     array.join(" and ")
   else
-    arr.each.collect do |value|
-      if value == arr[-1]
-        arr[-1] = "and " << value
+    array.each.collect do |value|
+      if value == array[-1]
+        array[-1] = "and " << value
       end
   end
-    arr.join(", ")
+    array.join(", ")
   end
 end
